@@ -235,3 +235,8 @@ function GetRandom(){
 	var myElement8 = document.getElementById("id_card")
         myElement8.value = bigAlphabet[Math.floor(Math.random() * bigAlphabet.length)] + bigAlphabet[Math.floor(Math.random() * bigAlphabet.length)] + bigAlphabet[Math.floor(Math.random() * bigAlphabet.length)] + Math.floor(Math.random() * 899999 + 100000).toString();
 }
+
+$(':required').one('blur keydown', function() {
+  console.log('touched', this);
+  $(this).addClass('touched');
+});

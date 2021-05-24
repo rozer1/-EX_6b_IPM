@@ -7,6 +7,21 @@ body {
   padding-top: 50px;
 }
 
+/**
+ * If a required input has been touched and is valid, it should be white.
+ */
+.touched:required:valid {
+  border-color: green;
+  border-width: 2px;
+}
+
+/**
+ * If a required input has been touched and is invalid, it should be pink.
+ */
+.touched:required:invalid {
+  border-color: red;
+  border-width: 2px;
+}
 
 /*
  * Global add-ons
@@ -98,4 +113,3 @@ body {
 .danger{color:red;}
 .cursor{cursor:pointer}
 span.customer{padding:8px 20px}
-
